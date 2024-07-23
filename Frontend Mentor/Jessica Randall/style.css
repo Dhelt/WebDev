@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.main-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+}
+
+.foto1{
+    border-radius: 100px;
+    width: 120px;
+}
+
+.box > texto1, h2{
+    color: hsl(75, 94%, 57%);
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+    font-size: medium;
+}
+
+.box > texto1, h1{
+    color: white;
+    justify-content: center;
+    font-weight: 500;
+    display: flex;
+}
+
+.box > texto1, p{
+    color: white;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+}
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 50vh;
+    background: hsl(0, 0%, 12%);
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.btn{
+    border: none;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    align-items: center;
+    line-height: 40px;
+    font-weight: 600;
+    outline: none;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 4px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn:hover{
+    background-color: hsl(75, 94%, 57%);;
+    color: hsl(0, 0%, 20%);
+}
+
+
+@media (max-width: 1024px) {
+    .btn{
+        width: 300px;
+        margin: 5px;
+    }
+
+    .foto1{
+        width: 80px;
+    }
+
+    .box{
+        width: 40%;
+        height: 550px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .btn{
+        width: 250px;
+    }
+
+    .box{
+        width: 80%;
+        height: 650px;
+    }
+}
+
+@media (max-width: 280px) {
+    .btn{
+        width: 250px;
+        margin: 5px;
+    }
+
+    .foto1{
+        width: 80px;
+    }
+
+    .box{
+        width: 95%;
+        height: 600px;
+    }
+}
